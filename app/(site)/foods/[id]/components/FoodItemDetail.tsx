@@ -15,7 +15,7 @@ function FoodItemDetail({ id }: { id: number }) {
   useEffect(() => {
     const getRecipeDetial = async () => {
       const res = await fetch(
-        `https://dishsharing.com:3000/api/1/recipes/${id}`
+        `http://dishsharing.com:3000/api/1/recipes/${id}`
       );
       const { data } = await res.json();
 
